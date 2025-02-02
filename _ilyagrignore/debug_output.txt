@@ -1,0 +1,986 @@
+[src/complete.rs:2367:47] cmd_with_subcmds = "tmux splitw "
+[src/complete.rs:2367:47] cmd_with_subcmds = "splitw "
+[src/complete.rs:2372:5] completer.acquire_completions() = [
+    Completion {
+        completion: "_deps/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "benchmarks/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "BSDmakefile",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "build.rs",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "build_tools/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "Cargo.lock",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "Cargo.toml",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "CHANGELOG.rst",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "cmake/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "CMakeFiles/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "CMakeLists.txt",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "CODE_OF_CONDUCT.md",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "compile_commands.json",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "CONTRIBUTING.rst",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "COPYING",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "corrosion/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "debian/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "deny.toml",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "doc_internal/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "doc_src/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "docker/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "Dockerfile",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "etc/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "fish",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "FISH-BUILD-VERSION-FILE",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish-build-version-witness.txt",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish.app/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "fish.desktop",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish.pc",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish.pc.in",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish.png",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish.spec.in",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish_indent",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "fish_key_reader",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "GNUmakefile",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "osx/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "po/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "printf/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "README.rst",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            0x0,
+        ),
+    },
+    Completion {
+        completion: "share/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "src/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "target/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "tests/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+    Completion {
+        completion: "user_doc/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE,
+        ),
+    },
+]
+[src/complete.rs:2372:5] completer.acquire_needs_load() = []
+[src/complete.rs:2372:5] completer.acquire_completions() = [
+    Completion {
+        completion: "benchmarks/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "BSDmakefile",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "build.rs",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "build_tools/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "Cargo.lock",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "Cargo.toml",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "CHANGELOG.rst",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "cmake/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "CMakeFiles/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "CMakeLists.txt",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "CODE_OF_CONDUCT.md",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "compile_commands.json",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "CONTRIBUTING.rst",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "COPYING",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "corrosion/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "debian/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "deny.toml",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "docker/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "Dockerfile",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "doc_internal/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "doc_src/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "etc/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish.app/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish.desktop",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish.pc",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish.pc.in",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish.png",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish.spec.in",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "FISH-BUILD-VERSION-FILE",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish-build-version-witness.txt",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish_indent",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "fish_key_reader",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "GNUmakefile",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "osx/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "po/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "printf/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "README.rst",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "share/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "src/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "target/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "tests/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "user_doc/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+    Completion {
+        completion: "_deps/",
+        description: "",
+        match: StringFuzzyMatch {
+            typ: Prefix,
+            case_fold: Sensitive,
+        },
+        flags: CompleteFlags(
+            NO_SPACE | DONT_ESCAPE_TILDES,
+        ),
+    },
+]
+[src/complete.rs:2372:5] completer.acquire_needs_load() = []
+benchmarks/
+BSDmakefile
+build.rs
+build_tools/
+Cargo.lock
+Cargo.toml
+CHANGELOG.rst
+cmake/
+CMakeFiles/
+CMakeLists.txt
