@@ -1,20 +1,46 @@
 .. _cmd-complete:
 
-complete - edit command-specific tab-completions
-================================================
+complete - edit or list command-specific tab-completions
+========================================================
 
 Synopsis
 --------
 
 .. synopsis::
 
-    complete ((-c | --command) | (-p | --path)) COMMAND [OPTIONS]
     complete (-C | --do-complete) [--escape] STRING
+    complete ((-c | --command) | (-p | --path)) COMMAND [OPTIONS]
 
 Description
 -----------
 
 ``complete`` defines, removes or lists completions for a command.
+
+Viewing completions
+-------------------
+
+.. synopsis::
+
+    complete (-C | --do-complete) [--escape] STRING
+
+``complete`` lists all the completion rules defined for the command described by
+the input string, each one in the form of a ``complete`` command.
+
+With **-C** or **--do-complete**, ``complete`` will instead output all the
+completions for the given string. If ``--escape`` is also specified, the special
+characters in these completions will be escapged. 
+
+Note that, unlike actual TAB-completion, ``complete`` never loads completions
+from ``$fish_complete_path``. So, if the completions for ``cmd`` are defined in
+one of the standard completion paths, it might be necessary to do ``cmd<TAB>``
+before ``complete cmd`` gives the expected output.
+
+Editing completions
+-------------------
+
+.. synopsis::
+
+    complete ((-c | --command) | (-p | --path)) COMMAND [OPTIONS]
 
 For an introduction to writing your own completions, see :ref:`Writing your own completions <completion-own>` in
 the fish manual.
@@ -69,12 +95,6 @@ The following options are available:
 
 **-n** or **--condition** *CONDITION*
     This completion should only be used if the *CONDITION* (a shell command) returns 0. This makes it possible to specify completions that should only be used in some cases. If multiple conditions are specified, fish will try them in the order they are specified until one fails or all succeeded.
-
-**-C** or **--do-complete** *STRING*
-    Makes ``complete`` try to find all possible completions for the specified string. If there is no *STRING*, the current commandline is used instead.
-
-**--escape**
-    When used with ``-C``, escape special characters in completions.
 
 **-h** or **--help**
     Displays help about using this command.
@@ -141,7 +161,6 @@ This can be written as:
 where ``__fish_contains_opt`` is a function that checks the command line buffer for the presence of a specified set of options.
 
 To implement an alias, use the ``-w`` or ``--wraps`` option:
-
 
 
 ::
