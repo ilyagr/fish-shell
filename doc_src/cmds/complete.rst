@@ -16,34 +16,25 @@ Description
 
 ``complete`` defines, removes or lists completions for a command.
 
-Viewing completions
--------------------
+If no options other than **-c**, **--command**, **-p**, or **--path** are used,
+``complete`` lists all the completion rules for the given command, one per line,
+each one in the form of a ``complete`` command.
 
-.. synopsis::
+If the **-C** or **--do-complete** option is used, ``complete`` will output all
+the completions for the given string, or for the current command line if no
+string is given. If **--escape** is also specified, the special characters in
+these completions will be escaped.
 
-    complete (-C | --do-complete) [--escape] STRING
+If any other options are used, ``complete`` will add, modify, or erase
+completion rules for a given command. For an introduction to writing your own
+completions, see :ref:`Writing your own completions <completion-own>` in the
+fish manual.
 
-``complete`` lists all the completion rules defined for the command described by
-the input string, each one in the form of a ``complete`` command.
-
-With **-C** or **--do-complete**, ``complete`` will instead output all the
-completions for the given string. If ``--escape`` is also specified, the special
-characters in these completions will be escapged. 
-
-Note that, unlike actual TAB-completion, ``complete`` never loads completions
-from ``$fish_complete_path``. So, if the completions for ``cmd`` are defined in
-one of the standard completion paths, it might be necessary to do ``cmd<TAB>``
-before ``complete cmd`` gives the expected output.
-
-Editing completions
--------------------
-
-.. synopsis::
-
-    complete ((-c | --command) | (-p | --path)) COMMAND [OPTIONS]
-
-For an introduction to writing your own completions, see :ref:`Writing your own completions <completion-own>` in
-the fish manual.
+When listing completions or completion rules, ``complete`` never loads any new
+completion rules from ``$fish_complete_path``. This differs from the behavior of
+actual TAB completion. So, if the completions for ``cmd`` are defined in one of
+the standard completion paths, it might be necessary to do ``cmd<TAB>`` before
+``complete cmd`` gives the expected output.
 
 The following options are available:
 
