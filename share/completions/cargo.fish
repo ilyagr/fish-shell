@@ -37,11 +37,11 @@ function __fish_cargo_targets
 end
 
 function __fish_cargo_features
-    if command -q jq
-        cargo read-manifest | jq -r '.features | keys | .[]' | __fish_concat_completions
-    else if set -l python (__fish_anypython)
+    if set -l python (__fish_anypython)
+        # This gets the features from the package for the current CLI, and fails in the top-level of a workspace without a top-level package. `cargo read-manifest` is deprecated,
+        # but using `cargo manifest` would require reading the `workspace_default_members` field to figure out which package we're in
         cargo read-manifest | command $python -Sc "import sys, json"\n"print(*json.load(sys.stdin)['features'].keys(), sep='\n')" | __fish_concat_completions
-    end
+    end 2>/dev/null
 end
 
 function __fish_cargo_packages
