@@ -47,7 +47,7 @@ end
 function __fish_cargo_packages
     find . -name Cargo.toml | string replace -rf '.*/([^/]+)/?Cargo.toml' '$1'
 end
-complete -c cargo -n '__fish_seen_subcommand_from run test build debug check' -l package \
+complete -c cargo -n '__fish_seen_subcommand_from run test build debug check clippy' -l package -s p \
     -xa "(__fish_cargo_packages)"
 
 ## --- AUTO-GENERATED WITH `cargo complete fish` ---
