@@ -156,3 +156,10 @@ complete -c tar -l no-auto-compress -d "Do not use archive suffix to determine t
 complete -c tar -s z -l gzip -l gunzip -l ungzip -d "Filter through gzip"
 complete -c tar -s Z -l compress -l uncompress -d "Filter through compress"
 complete -c tar -l zstd -d "Filter through zstd"
+
+if string match -q 'bsdtar*' -- (tar --version)
+   and [ (uname) = "Darwin" ]
+    # Apple's tar
+    complete -c tar -l mac-metadata -d "Archive or extract AppleDouble macOS attributes"
+    complete -c tar -l no-mac-metadata -d "Do not archive or extract AppleDouble macOS attributes"
+end
