@@ -1,5 +1,6 @@
 #RUN: %fish %s
 #REQUIRES: command -v tmux
+# TODO?
 
 set -g isolated_tmux_fish_extra_args -C '
     function fish_prompt

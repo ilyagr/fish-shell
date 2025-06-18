@@ -27,6 +27,7 @@ function isolated-tmux-start
     end
 
     set -l fish (status fish-path)
+    # TODO?
     isolated-tmux new-session -x 80 -y 10 -d $fish -C '
         # This is similar to "tests/interactive.config".
         function fish_greeting; end

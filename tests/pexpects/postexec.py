@@ -7,6 +7,7 @@ sendline, expect_prompt, expect_str = sp.sendline, sp.expect_prompt, sp.expect_s
 # Test fish_postexec and $status_generation for interactive shells.
 expect_prompt()
 
+# TODO?
 sendline(
     "function test_fish_postexec --on-event fish_postexec; printf 'pipestatus:%s, generation:%d, command:%s\\n' (string join '|' $pipestatus) $status_generation $argv; end"
 )
