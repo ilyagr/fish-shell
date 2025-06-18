@@ -146,6 +146,14 @@ function __fish_on_interactive --on-event fish_prompt --on-event fish_read
     __fish_config_interactive
 end
 
+set -g interactive_pipestatus 0
+set -g interactive_status 0
+# Should be executed after any interactive command
+function __fish_set_interactive_status  --on-event fish_postexec
+       set -g interactive_pipestatus $pipestatus
+       set -g interactive_status $status
+end
+
 # Set the locale if it isn't explicitly set. Allowing the lack of locale env vars to imply the
 # C/POSIX locale causes too many problems. Do this before reading the snippets because they might be
 # in UTF-8 (with non-ASCII characters).
