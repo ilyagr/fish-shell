@@ -148,10 +148,18 @@ end
 
 set -g interactive_pipestatus 0
 set -g interactive_status 0
+function __fish_set_interactive_status
+    set -g interactive_pipestatus $pipestatus
+    set -g interactive_status $status
+    if set -q argv[1]  # For webconfig and other tools that simulate prompts
+        set -g interactive_pipestatus $argv
+        set -g interactive_status $argv[-1]
+    end
+end
+
 # Should be executed after any interactive command
-function __fish_set_interactive_status  --on-event fish_postexec
-       set -g interactive_pipestatus $pipestatus
-       set -g interactive_status $status
+function __fish_set_interactive_status_event  --on-event fish_postexec
+    __fish_set_interactive_status
 end
 
 # Set the locale if it isn't explicitly set. Allowing the lack of locale env vars to imply the
