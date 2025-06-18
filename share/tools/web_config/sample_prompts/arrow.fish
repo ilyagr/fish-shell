@@ -2,7 +2,7 @@
 # author: Bruno Ferreira Pinto, Pawel Zubrycki
 
 function fish_prompt
-    set -l __last_command_exit_status $status
+    set -l __last_command_exit_status $interactive_status
 
     if not set -q -g __fish_arrow_functions_defined
         set -g __fish_arrow_functions_defined

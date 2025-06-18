@@ -24,7 +24,7 @@ function fish_prompt
     # ╰─>$ echo there
 
     set -l retc red
-    test $status = 0; and set retc green
+    test $interactive_status = 0; and set retc green
 
     set -q __fish_git_prompt_showupstream
     or set -g __fish_git_prompt_showupstream auto

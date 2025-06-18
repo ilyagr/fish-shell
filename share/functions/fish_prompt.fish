@@ -2,8 +2,7 @@
 # author: Lily Ballard
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_pipestatus $pipestatus
-    set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
+    set -l last_pipestatus $interactive_pipestatus
     set -l normal (set_color normal)
     set -q fish_color_status
     or set -g fish_color_status red

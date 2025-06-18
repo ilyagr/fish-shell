@@ -3,7 +3,7 @@ function __fish_print_pipestatus --description "Print pipestatus for prompt"
     if set -q __fish_last_status
         set last_status $__fish_last_status
     else
-        set last_status $argv[-1] # default to $pipestatus[-1]
+        set last_status $interactive_status
     end
     set -l left_brace $argv[1]
     set -l right_brace $argv[2]

@@ -2,7 +2,7 @@
 # author: Fabian Homborg
 
 function fish_prompt
-    set -l last_status $status
+    set -l last_status $interactive_status
 
     set -l normal (set_color normal)
     set -l usercolor (set_color $fish_color_user)

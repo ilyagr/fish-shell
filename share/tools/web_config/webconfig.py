@@ -1058,7 +1058,7 @@ class FishConfigHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             prompt_function_text
             + '\n builtin cd "'
             + initial_wd
-            + '" \n false \n fish_prompt\n'
+            + '" \n false \n __fish_set_interactive_status \n fish_prompt\n'
         )
         prompt_demo_ansi, err = run_fish_cmd(cmd)
         prompt_demo_html = ansi_to_html(prompt_demo_ansi)
@@ -1067,7 +1067,7 @@ class FishConfigHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             + prompt_function_text
             + '\n builtin cd "'
             + initial_wd
-            + '" \n false \n functions -q fish_right_prompt && fish_right_prompt\n'
+            + '" \n false \n __fish_set_interactive_status \n functions -q fish_right_prompt && fish_right_prompt\n'
         )
         right_demo_html = ansi_to_html(right_demo_ansi)
         prompt_demo_font_size = self.font_size_for_ansi_prompt(

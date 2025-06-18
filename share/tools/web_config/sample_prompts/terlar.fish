@@ -2,7 +2,7 @@
 # author: terlar - https://github.com/terlar
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_status $status
+    set -l last_status $interactive_status
 
     prompt_login
 

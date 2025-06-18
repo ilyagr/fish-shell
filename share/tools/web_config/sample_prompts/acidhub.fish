@@ -2,7 +2,7 @@
 # author: Acidhub - https://acidhub.click/
 
 function fish_prompt -d "Write out the prompt"
-    set -l laststatus $status
+    set -l laststatus $interactive_status
 
     set -l git_info
     if git rev-parse 2>/dev/null
