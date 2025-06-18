@@ -3,7 +3,6 @@
 # description: A prompt theme similar to Starship.rs but without the emojis.
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_status $interactive_status
     set -l normal (set_color normal)
     set -l status_color (set_color brgreen)
     set -l cwd_color (set_color $fish_color_cwd)
@@ -24,9 +23,9 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     # Color the prompt in red on error
-    if test $last_status -ne 0
+    if test $interactive_status -ne 0
         set status_color (set_color $fish_color_error)
-        set prompt_status $status_color "[" $last_status "]" $normal
+        set prompt_status $status_color "[" $interactive_status "]" $normal
     end
 
     echo -s (prompt_login) ' ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' ' $prompt_status

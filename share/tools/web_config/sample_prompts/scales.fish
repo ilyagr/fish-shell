@@ -22,9 +22,8 @@ end
 
 # And now define the right prompt so that it's brought along
 function fish_right_prompt
-    set -l cmd_status $interactive_status
-    if test $cmd_status -ne 0
-        echo -n (set_color red)"✘ $cmd_status"
+    if test $interactive_status -ne 0
+        echo -n (set_color red)"✘ $interactive_status"
     end
 
     if not command -sq git

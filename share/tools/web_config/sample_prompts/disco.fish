@@ -2,8 +2,6 @@
 # author: Fabian Homborg
 
 function fish_prompt
-    set -l last_status $interactive_status
-
     set -l normal (set_color normal)
     set -l usercolor (set_color $fish_color_user)
 
@@ -36,7 +34,7 @@ function fish_prompt
 
     # Prompt status only if it's not 0
     set -l prompt_status
-    test $last_status -ne 0; and set prompt_status (set_color $fish_color_status)"[$last_status]$normal"
+    test $interactive_status -ne 0; and set prompt_status (set_color $fish_color_status)"[$interactive_status]$normal"
 
     # Only show host if in SSH or container
     # Store this in a global variable because it's slow and unchanging

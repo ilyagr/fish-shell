@@ -2,8 +2,6 @@
 # author: Acidhub - https://acidhub.click/
 
 function fish_prompt -d "Write out the prompt"
-    set -l laststatus $interactive_status
-
     set -l git_info
     if git rev-parse 2>/dev/null
         set -l git_branch (
@@ -44,7 +42,7 @@ function fish_prompt -d "Write out the prompt"
 
     set_color -b black
     printf '%s%s%s%s%s%s%s%s%s%s%s%s%s' (set_color -o white) '❰' (set_color green) $USER (set_color white) '❙' (set_color yellow) (prompt_pwd) (set_color white) $git_info (set_color white) '❱' (set_color white)
-    if test $laststatus -eq 0
+    if test $interactive_status -eq 0
         printf "%s✔%s≻%s " (set_color -o green) (set_color white) (set_color normal)
     else
         printf "%s✘%s≻%s " (set_color -o red) (set_color white) (set_color normal)

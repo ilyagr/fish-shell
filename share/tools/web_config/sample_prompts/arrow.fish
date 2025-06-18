@@ -2,8 +2,6 @@
 # author: Bruno Ferreira Pinto, Pawel Zubrycki
 
 function fish_prompt
-    set -l __last_command_exit_status $interactive_status
-
     if not set -q -g __fish_arrow_functions_defined
         set -g __fish_arrow_functions_defined
         function _git_branch_name
@@ -67,7 +65,7 @@ function fish_prompt
     set -l normal (set_color normal)
 
     set -l arrow_color "$green"
-    if test $__last_command_exit_status != 0
+    if test $interactive_status != 0
         set arrow_color "$red"
     end
 

@@ -2,8 +2,6 @@
 # author: terlar - https://github.com/terlar
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_status $interactive_status
-
     prompt_login
 
     echo -n ':'
@@ -50,7 +48,7 @@ function fish_prompt --description 'Write out the prompt'
     fish_vcs_prompt '|%s'
     echo
 
-    if not test $last_status -eq 0
+    if not test $interactive_status -eq 0
         set_color $fish_color_error
     end
 

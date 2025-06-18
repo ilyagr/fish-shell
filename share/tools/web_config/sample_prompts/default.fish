@@ -2,7 +2,6 @@
 # author: Lily Ballard
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_pipestatus $interactive_pipestatus
     set -l normal (set_color normal)
     set -q fish_color_status
     or set -g fish_color_status red
@@ -27,7 +26,7 @@ function fish_prompt --description 'Write out the prompt'
     set __fish_prompt_status_generation $status_generation
     set -l status_color (set_color $fish_color_status)
     set -l statusb_color (set_color $bold_flag $fish_color_status)
-    set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
+    set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $interactive_pipestatus)
 
     echo -n -s (prompt_login)' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end
