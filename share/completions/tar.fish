@@ -151,3 +151,13 @@ complete -c tar -l no-auto-compress -d "Do not use archive suffix to determine t
 complete -c tar -s z -l gzip -l gunzip -l ungzip -d "Filter through gzip"
 complete -c tar -s Z -l compress -l uncompress -d "Filter through compress"
 complete -c tar -l zstd -d "Filter through zstd"
+
+## Archive format
+if string match -q 'bsdtar*' -- (tar --version 2>&1)
+    complete -c tar -l format -x -a "ustar pax cpio shar" -d "Archive format"
+    complete -c tar -l mac-metadata -d "Archive or extract AppleDouble macOS attributes"
+    complete -c tar -l no-mac-metadata -d "Do not archive or extract AppleDouble macOS attributes"
+else
+    complete -c tar -s H -l format -x -a "gnu oldgnu pax posix ustar v7" -d "Archive format"
+    complete -c tar -l posix -d "Same as --format=posix"
+end
