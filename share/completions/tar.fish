@@ -105,7 +105,7 @@ complete -c tar -l xattrs-include -d "Specify the include pattern for xattr keys
 
 ## Device selection and switching
 complete -c tar -s f -l file -r -d "Archive file"
-complete -c tar -l force-local -r -d "Archive file is local even if it has a colon"
+complete -c tar -l force-local -d "Archive file is local even if it has a colon"
 complete -c tar -s F -l info-script -l new-volume-script -r -d "Run script at end of tape"
 complete -c tar -s L -l tape-length -r -d "Tape length"
 complete -c tar -s M -l multi-volume -d "Multi volume archive"
@@ -113,15 +113,10 @@ complete -c tar -l rmt-command -r -d "Use COMMAND instead of rmt"
 complete -c tar -l rsh-command -r -d "Use COMMAND instead of rsh"
 complete -c tar -l volno-file -r -d "keep track of which volume of a multi-volume archive it is working in FILE"
 
-complete -c tar -s f -l file -r -d "Archive file"
-complete -c tar -s f -l file -r -d "Archive file"
-complete -c tar -s f -l file -r -d "Archive file"
-
 complete -c tar -s b -l block-size -d "Block size"
 complete -c tar -s B -l read-full-blocks -d "Reblock while reading"
 complete -c tar -s C -l directory -r -d "Change directory"
 complete -c tar -l checkpoint -d "Print directory names"
-complete -c tar -l force-local -d "Archive is local"
 complete -c tar -s h -l dereference -d "Dereference symlinks"
 complete -c tar -s i -l ignore-zeros -d "Ignore zero block in archive"
 complete -c tar -s K -l starting-file -r -d "Starting file in archive"
